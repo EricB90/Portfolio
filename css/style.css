@@ -1,0 +1,340 @@
+* {box-sizing: border-box;}
+
+/* font-family: 'Amatic SC', cursive;
+font-family: 'Pompiere', cursive;
+font-family: 'Roboto Mono', monospace; */
+
+:root {
+    --codeFont: 'Roboto Mono', monospace;
+    --mainFont: 'Amatic SC', cursive;
+    --bodyFont: 'Pompiere', cursive;
+}
+
+/* generic rules */
+.icon {
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+body {
+    background-color: #000;
+}
+/* close generic */
+
+/* header rules */
+.top-header-section {
+    padding: 20px 0;
+}
+
+.socials {
+    padding-left: 10px;
+}
+
+.socials a {
+    color: #fff;
+    font-family: var(--codeFont);
+}
+
+@media (max-width: 321px) {
+    .socials a {
+        font-size: 12px;
+    }
+}
+
+.logo a {
+    animation: pulse 3s infinite;
+    font-family: var(--mainFont);
+    font-size: calc(50px + (90 - 50) * ((100vw - 300px) / (1600 - 300)));
+    text-transform: uppercase;
+}
+
+.logo a:hover {
+    text-decoration: none;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        color: #fff;
+    }
+    50% {
+        color: #3b3b3b;
+    }
+}
+
+.header-nav-section {
+    padding: 20px 0;
+}
+
+.header-list-item a {
+    color: #fff;
+    font-family: var(--codeFont);
+}
+
+@media (max-width: 321px) {
+    .header-list-item a {
+        font-size: 12px;
+    }
+}
+/* close header */
+
+/* main rules */
+.carousel-section {
+    padding: 20px 0;
+}
+
+.carousel-section h2 {
+    padding-bottom: 30px;
+    color: #fff;
+    font-family: var(--mainFont);
+    font-size: calc(20px + (50 - 20) * ((100vw - 300px) / (1600 - 300)));
+    text-transform: uppercase;
+}
+
+.certification-section {
+    padding: 20px 0;
+}
+
+.certification-section h2 {
+    padding-bottom: 20px;
+    color: #fff;
+    font-family: var(--mainFont);
+    font-size: calc(20px + (50 - 20) * ((100vw - 300px) / (1600 - 300)));
+    text-transform: uppercase;
+}
+
+.about-section {
+    padding: 20px 0 50px 0;
+}
+
+.about-header {
+    color: #fff;
+    font-family: var(--mainFont);
+    font-size: calc(20px + (50 - 20) * ((100vw - 300px) / (1600 - 300)));
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media (max-width: 769px) {
+    .about-header {
+        font-size: 40px;
+    }
+}
+
+.about-text {
+    padding-top: 20px;
+    color: #fff;
+    font-family: var(--bodyFont);
+    font-size: calc(15px + (30 - 15) * ((100vw - 300px) / (1600 - 300)));
+    text-align: justify;
+}
+
+@media (max-width: 577px) {
+    .about-text {
+        font-size: 20px;
+    }
+}
+
+.about-section .icon {
+    margin-top: 20px;
+    width: 5em;
+    height: 5em;
+    fill: #fff;
+}
+
+@media (max-width: 577px) {
+    .about-svg-div {
+        margin-bottom: 40px;
+    }
+}
+
+.projects-section {
+    padding: 40px 0;
+}
+
+.projects-section h2 {
+    padding-bottom: 30px;
+    color: #fff;
+    font-family: var(--mainFont);
+    font-size: calc(20px + (50 - 20) * ((100vw - 300px) / (1600 - 300)));
+    text-transform: uppercase;
+}
+
+.projects-section button {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.projects-section .card {
+    margin-bottom: 30px;
+}
+
+.repo-text {
+    background-color: #000;
+}
+
+.projects-section h5 {
+    color: #fff;
+    font-family: var(--mainFont);
+    font-size: calc(20px + (50 - 20) * ((100vw - 300px) / (1600 - 300)));
+    text-transform: uppercase;
+}
+
+.projects-section p {
+    color: #fff;
+    font-family: var(--bodyFont);
+    font-size: calc(15px + (30 - 15) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.projects-section a {
+    font-family: var(--bodyFont);
+    font-size: calc(15px + (30 - 15) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.projects-section img {
+    width: 100%;
+    height: 250px;
+}
+
+@media (max-width: 769px) {
+    .projects-section img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 577px) {
+    .projects-section img {
+        height: 270px;
+    }
+}
+
+@media (max-width: 321px) {
+    .projects-section img {
+        height: 150px;
+    }
+}
+
+.blog-section {
+    padding: 40px 0;
+}
+
+.blog-section h2 {
+    padding-bottom: 30px;
+    color: #fff;
+    font-family: var(--mainFont);
+    font-size: calc(20px + (50 - 20) * ((100vw - 300px) / (1600 - 300)));
+    text-transform: uppercase;
+}
+
+.blog-section .card {
+    margin-bottom: 30px;
+}
+
+.blog-text {
+    background-color: #000;
+    font-family: var(--bodyFont);
+    font-size: 30px;
+    color: #fff;
+}
+
+@media (max-width: 321px) {
+    .blog-text {
+        font-size: 20px;
+    }
+}
+
+.blog-section button {
+    font-family: var(--mainFont);
+    font-size: 25px;
+}
+
+.contact-section {
+    padding: 40px 0;
+}
+
+.contact-section h2 {
+    padding-bottom: 30px;
+    color: #fff;
+    font-family: var(--mainFont);
+    font-size: calc(20px + (50 - 20) * ((100vw - 300px) / (1600 - 300)));
+    text-transform: uppercase;
+}
+
+.contact-section .svg-div {
+    padding-bottom: 20px;
+}
+
+.contact-section .icon {
+    width: 4em;
+    height: 4em;
+    fill: #fff;
+}
+
+.contact-section h3 {
+    color: #fff;
+    font-family: var(--mainFont);
+    font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (1600 - 300)));
+}
+
+@media (max-width: 321px) {
+    .contact-section h3 {
+        font-size: 30px;
+    }
+}
+
+.contact-section p {
+    color: #fff;
+    font-family: var(--mainFont);
+    font-size: calc(15px + (30 - 15) * ((100vw - 300px) / (1600 - 300)));
+}
+
+@media (max-width: 577px) {
+    .contact-section p {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 321px) {
+    .contact-section p {
+        font-size: 20px;
+    }
+}
+/* close main */
+
+/* footer rules */
+.symbol-bar-section {
+    padding: 40px;
+    background-image: linear-gradient(#000, #3b3b3b, #000);
+}
+
+.symbol-bar-section .icon {
+    fill: #fff;
+}
+
+@media (max-width: 321px) {
+    .symbol-bar-section .icon {
+        width: 2em;
+        height: 2em;
+    }
+}
+
+.colophon-section {
+    margin-top: 30px;
+}
+
+.colophon-text {
+    color: #fff;
+    font-family: var(--mainFont);
+    font-size: calc(10px + (25 - 10) * ((100vw - 300px) / (1600 - 300)));
+    text-transform: uppercase;
+}
+
+@media (max-width: 577px) {
+    .colophon-text {
+        font-size: 18px;
+    }
+}
+/* close footer */
